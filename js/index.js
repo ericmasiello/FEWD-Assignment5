@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   // hide readless
   function hideOnClick() {
-    $('.readless').slideUp ();
+    $('.readless').hide ();
     $('#showonclick').slideUp();
     $('.readmore').show();
 }
