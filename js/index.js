@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  $('.readmore,.readless,.learnmore').click(function(event) {
+  // Do this first!
+  event.preventDefault();
+
   // hide all the extra text initially
   $('.hide').hide();
 
@@ -13,14 +17,14 @@ $(document).ready(function() {
   // show readmore
   function showOnClick() {
     $('.readmore').hide();
-    $('#showonclick').slideDown();
+    $('#show-this-on-click').slideDown();
     $('.readless').show();
   }
 
   // hide readless
   function hideOnClick() {
     $('.readless').hide ();
-    $('#showonclick').slideUp();
+    $('#show-this-on-click').slideUp();
     $('.readmore').show();
 }
    // show learnmore
@@ -28,5 +32,5 @@ $(document).ready(function() {
     $('#learnmoretext').slideDown();
     $('.learnmore').hide();
   }
-
+});
 });
