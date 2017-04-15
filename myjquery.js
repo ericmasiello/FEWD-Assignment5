@@ -3,21 +3,18 @@ $(document).ready(function() {
         // console.log('I got here!');
 
 
-
 $(".readmore").click(function(){
 
- 	$(".hide").slideDown("slow");
+ 	$(".hide").slideDown();
 
  	$(".readmore").hide();
 
- 	$(".learnmore").stop().slideDown();
-
-
+	
 });
 
 $(".readless").click(function(){
 
-     $("#show-this-on-click").slideUp("slow");
+     $("#show-this-on-click").slideUp();
 
      $(".readless").hide();
 
@@ -25,12 +22,13 @@ $(".readless").click(function(){
 
   });
 
+$(".learnmore").click(function(){
 
+     $("#learnmoretext").slideDown();
 
+    
 
-
-
-
+  });
 
 
 	/* put all your code here */
