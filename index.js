@@ -7,17 +7,22 @@ $(document).ready(function(){
 	
 	function showMeMore(){
 		event.preventDefault();
-		$('#show-this-on-click').slideDown();
-		$('.readless').show();
 		$('.readmore').hide();
+		$('#show-this-on-click').slideDown(function(){
+			$('.readless').show();
+	});
+		
+		
 	}
 
 
 	function showMeLess(){
 		event.preventDefault();
-		$('#show-this-on-click').slideUp();
 		$('.readless').hide();
-		$('.readmore').show();
+		$('#show-this-on-click').slideUp(function(){
+				$('.readmore').show();
+			});
+		
 		
 	}
 
